@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(imagenes/fondo.jpg) no-repeat center center/cover;
+}
+
+.contenedor-principal{
+    width: 80vw;
+    max-width: 600px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.contenedor-botones {
+    padding: 20px;
+}
+
+/*Cronometro*/
+#cronometro{
+    width: 100%;
+    font-size: 80px;
+    font-weight: Medium 500;
+    /*Para que el usuario no pueda seleccionar el texto*/
+    user-select: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.boton{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+    background-color: #083ae0;
+}
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+    background-color: #bc08e0;
+}
+
+#boton-reiniciar{
+    background-color: #e0085b;
+}
